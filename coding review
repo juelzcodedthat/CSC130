@@ -1,0 +1,4 @@
+speed = int(input('What is your current speed (mph): '))
+
+if speed > 70:
+    print('Slow Down!')
