@@ -1,0 +1,32 @@
+class BankAccount:
+
+
+    
+    def __init__(self, orig_bal, annual_interest_rate):
+        self.__balance = orig_bal
+        self.__rate = annual_interest_rate
+
+    def cal_interest(self, years):
+        interest = self.__balance * self.__rate * years
+        return interest
+
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+        else:
+            print('Error: Insufficient funds')
+
+
+    def get_balance(self):
+        return self.__balance
+def main():
+    alice_account = BankAccount(orig_bal = 10000, annual_interest_rate = 0.02)
+    alice_interest = alice_account.cal_interest(3)
+
+    print(f'Total amount of interest: {alice_interest}')
+main()
