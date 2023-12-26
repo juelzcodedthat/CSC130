@@ -1,0 +1,11 @@
+string1 = '123AB'
+string2 = 'CDE45'
+string1 += string2
+print(f'The extended string1 is {string1}')
+print(f'The length is {len(string1)}')
+print(f'The is at index -8 is {string1[-8]}')
+print(f'The extracted slice is {string1[3:8]}')
+if 'cd' in string1[3:8]:
+    print("Does the slice contain 'cd'?: True")
+else:
+    print("Does the slice contain 'cd'?: False")
