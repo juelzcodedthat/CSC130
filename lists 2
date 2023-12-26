@@ -1,0 +1,13 @@
+num = [45, 67, 34, 89, 31, 52]
+print(f'Original list: {num}')
+num.insert(3, 76)
+print(f'List after insertion: {num}')
+num.sort()
+print(f'List after sorting: {num}')
+num.remove(89)
+print(f'List after removal {num}')
+num.reverse()
+print(f'List after reversing: {num}')
+del num[0]
+print(f'List after deletion: {num}')
+print(f'Minimum element: {min(num)}  Maximum element: {max(num)}') 
