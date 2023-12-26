@@ -1,0 +1,8 @@
+contract = input('Do you agree to the contract?: ')
+
+if contract == 'Yes':
+    print('We have a deal!')
+elif contract == 'No':
+    print("It's a pity!")
+else:
+    print('Invalid answer!')
