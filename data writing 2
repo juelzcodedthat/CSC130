@@ -1,0 +1,10 @@
+def main():
+    numbers_file = open('numbers.txt', 'w')
+
+    for num in range(1, 101):
+        print(str(num) + '\n')
+        
+    numbers_file.close()
+        
+
+main()
