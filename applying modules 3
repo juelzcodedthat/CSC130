@@ -1,0 +1,11 @@
+import random
+import math
+
+def generate(lower, upper):
+    randnum = random.randint(lower,upper)
+    return randnum
+def main():
+    randnum = generate(500,900)
+    print(f'The generated number is {randnum}')
+    print(f'The returned square root is {math.sqrt(randnum)}')
+main()
