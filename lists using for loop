@@ -1,0 +1,5 @@
+numbers_list = [42, 23, 66, 39, 87, 28]
+
+for index, numbers in enumerate(numbers_list):
+
+      print(f'Element at index {index}: {number}') 
