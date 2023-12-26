@@ -1,0 +1,13 @@
+phonebook = {'Alice' : 1234, 'Bob' : 4567, 'Charlie' : 7890}
+
+phonebook = {'Alice' : 1234, 'Bob' : 2468, 'Charlie' : 7890, 'David' : 1357}
+print(f'After assignment: {phonebook}')
+if 'Charlie' in phonebook:
+    del phonebook['Charlie']
+    print(f'After deletion: {phonebook}')
+else:
+    print('There is no key \'Charlie\' in dictionary phonebook')
+print(f"Bob's phone number is {phonebook.get('Bob', 'Not Found!')}")
+print(f"Alice's phone number is {phonebook.pop('Alice', 'Not Found!')}")
+print(f"After pop: {phonebook}")
+print(f'Names in the dictionary: {phonebook.keys()}')
