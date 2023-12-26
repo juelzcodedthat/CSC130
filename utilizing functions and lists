@@ -1,0 +1,12 @@
+def avg(my_list):
+    total = 0
+    for num in my_list:
+        total += num
+    average = total / len(my_list)
+    return average
+
+def main():
+    my_list = [3, 6, 7, 2, 5, 2, 9, 1, 8,4]
+    print(f'The average value of elements in the list is {avg(my_list)}')
+
+main()
