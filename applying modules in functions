@@ -1,0 +1,13 @@
+import math
+import random
+
+def calculate(gn):
+    root = math.sqrt(gn)
+    return root
+def main():
+    gn = random.randint(10,99)
+    print(f'The generated number is {gn}')
+    calculate(gn)
+    print(f'The returned square root value is {calculate(gn)}')
+
+main()
