@@ -1,0 +1,11 @@
+def mul(num1, num2):
+    product = num1 * num2
+    return product
+def main():
+    num1 = int(input('Enter your first number: '))
+    num2 = int(input('Enter your second number: '))
+    product = mul(num1, num2)
+
+    print(product)
+
+main()
