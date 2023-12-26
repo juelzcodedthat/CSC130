@@ -1,0 +1,16 @@
+num = [10, 35, 60, 55, 50, 70, 15, 80, 90]
+print(f'The original list is {num}')
+num.append(65)
+print(f'The appended list is {num}')
+index_35 = num.index(35)
+index_80 = num.index(80)
+print('The index numbers are', index_35, 'and', index_80)
+print(f'The extracted slice is {num[1:8]}')
+if 65 in num[1:8]:
+    print('Whether does the slice contain 65: True')
+else:
+    print('Whether does the slice contain 65: False')
+num.insert(3, 25)
+print(f'List after insertion: {num}')
+num.sort()
+print(f'List after sorting: {num}')
