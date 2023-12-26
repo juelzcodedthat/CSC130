@@ -1,0 +1,7 @@
+numbers_list = [1,2,3,4,5,6]
+
+for index in range(len(numbers_list)):
+
+    numbers_lists[index] = numbers_list[index] ** 2
+
+print(numbers_list)
