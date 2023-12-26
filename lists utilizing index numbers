@@ -1,0 +1,15 @@
+num1 = ['yes', 20, 30, 40, 50, 'no']
+
+print('The original list is:', num1)
+
+num1[0] = 10
+
+num1[-1] = 60
+
+print('The modified list is:', num1)
+
+num 2 = [70, 80, 90]
+
+num1.extend(num2)
+
+print('The extend list is:', num1)
