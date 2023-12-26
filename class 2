@@ -1,0 +1,41 @@
+class Person:
+    def __init__(self, n, a):
+        self.name = n
+        self.age = a
+    def set_name(self,n):
+        self.name = n
+    def get_name(self):
+        return self.name
+    def set_age(self, a):
+        self.age = a
+    def get_age(self):
+        return self.age
+    def earnings(self):
+        return 0
+def main():
+    person = Person(n = 'Alice Smith', a = 30)
+    print('Before change, Alice is ', person.get_age())
+    person.set_age(31)
+    print('After change, Alice becomes', person.get_age())
+main()
+
+class Employee(Person):
+    def __init__(self, n, a, y):
+        super().__init__(n, a)
+        self.years = y
+    def set_years(self, y):
+        self.years = y
+    def get_years(self):
+        return self.years
+    def earnings(self):
+        self.earnings = self.years/10*2000+2000
+        return self.earnings
+
+def main():
+    person = Person(n = 'Bob', a = 31)
+    employee = Employee(n = 'David', a = 32, y = 5)
+    print("Bob's age:", person.get_age())
+    print("David's age", employee.get_age())
+    print("Bob's earnings: $", person.earnings())
+    print("David's earnings: $", employee.earnings())
+main()
