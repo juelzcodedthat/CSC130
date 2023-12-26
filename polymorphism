@@ -1,0 +1,10 @@
+class Newlist(list):
+    def append(self, new_elem):
+        super().insert(0, new_elem)
+        super().append(new_elem)
+def main():
+    list1 = Newlist('abcd')
+    print('Original list:', list1)
+    list1.append('!')
+    print('After appending:', list1)
+main()
