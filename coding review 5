@@ -1,0 +1,7 @@
+run = 'yes'
+
+while run == 'yes':
+    number = int(input('Enter a number: '))
+    print(f'The square of the entered number is {number**2}')
+
+    run = input('Do you want to continue? answer yes/no     ')
