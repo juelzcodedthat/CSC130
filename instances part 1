@@ -1,0 +1,42 @@
+class BankAccount:
+
+    
+    def __init__(self, orig_bal, owner_name):
+        self.__balance = orig_bal
+        self.name = owner_name
+
+    def get_name(self):
+        return self.name
+
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+        else:
+            print('Error: Insufficient funds')
+
+
+    def get_balance(self):
+        return self.__balance
+
+def main():
+    aliceaccount = BankAccount(orig_bal = 800, owner_name = 'Alice Smith')
+    alicename  = aliceaccount.get_name()
+    alicebalance = aliceaccount.get_balance()
+    print(f'The original account balance: {alicebalance}')
+    print(f'Account name: {alicename}')
+
+
+    aliceaccount.deposit(200)
+    aliceaccount.withdraw(500)
+        
+    update = aliceaccount.get_balance()
+
+
+    print(f'The updated account balance: {update}')
+
+main()
