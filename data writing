@@ -1,0 +1,16 @@
+def main():
+
+    name1 = input('Enter the 1st name: ')
+    name2 = input('Enter the 2nd name: ')
+    name3 = input('Enter the 3rd name: ')
+
+    myfile = open('names.txt', 'w')
+
+    myfile.write(name1 + '\n')
+    myfile.write(name2 + '\n')
+    myfile.write(name3 + '\n')
+
+    myfile.close
+
+main()
+
